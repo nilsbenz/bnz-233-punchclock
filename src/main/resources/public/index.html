@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PunchClock</title>
+    <link rel="stylesheet" href="styles/indexStyles.css">
+</head>
+<body>
+<div class="container">
+    <div class="center">
+        <div class="space-between">
+            <h1>Punchclock Entries</h1>
+            <button class="logout" id="logout">Logout</button>
+        </div>
+
+        <div class="form">
+            <div>
+                <label>
+                    Check In
+                    <input type="datetime-local" id="check-in-input" autofocus required>
+                </label>
+                <label>
+                    Check Out
+                    <input type="datetime-local" id="check-out-input" required>
+                </label>
+            </div>
+            <button id="submit" class="contained">Save</button>
+        </div>
+
+        <main></main>
+    </div>
+</div>
+
+<section class="entry template">
+    <div>
+        <p class="check-in"></p>
+        <p class="check-out"></p>
+    </div>
+    <button class="delete">Delete</button>
+</section>
+
+<script src="controllers/indexController.js" type="module"></script>
+</body>
+</html>

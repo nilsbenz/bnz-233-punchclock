@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PuckClock Login</title>
+    <link rel="stylesheet" href="styles/authStyles.css">
+</head>
+<body>
+<div class="container">
+    <div class="center">
+        <h1>Login</h1>
+
+        <div class="form">
+            <label>
+                Username
+                <input type="text" id="username-input" autofocus required>
+            </label>
+            <label>
+                Password
+                <input type="password" id="password-input" required>
+            </label>
+            <button id="submit" class="contained">Login</button>
+            <p id="alert"></p>
+        </div>
+        <a href="/register.html">
+            <button>Register instead</button>
+        </a>
+    </div>
+</div>
+
+<script src="controllers/loginController.js" type="module"></script>
+</body>
+</html>
